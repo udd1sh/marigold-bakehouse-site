@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marigold Bakehouse</title>
+  <meta name="description" content="Marigold Bakehouse — fresh breads, pastries and bakes. Order through WhatsApp or Instagram." />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Inter, Arial, sans-serif;
+      background: #fffaf3;
+      color: #2d211b;
+      line-height: 1.6;
+    }
+    header {
+      padding: 24px 7%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eadfce;
+      background: #fffaf3;
+    }
+    .logo { font-size: 22px; font-weight: 800; letter-spacing: -0.5px; }
+    nav a {
+      margin-left: 24px;
+      color: #5b4638;
+      text-decoration: none;
+      font-size: 14px;
+    }
+    .hero {
+      padding: 90px 7% 80px;
+      max-width: 1050px;
+      margin: auto;
+    }
+    .eyebrow {
+      color: #a56832;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 14px;
+    }
+    h1 {
+      font-size: clamp(48px, 8vw, 88px);
+      line-height: .95;
+      letter-spacing: -4px;
+      max-width: 800px;
+      margin-bottom: 25px;
+    }
+    .hero p { max-width: 620px; font-size: 18px; color: #705d50; }
+    .cta {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 13px 20px;
+      border-radius: 999px;
+      background: #2d211b;
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 14px;
+    }
+    section { padding: 70px 7%; max-width: 1050px; margin: auto; }
+    h2 { font-size: 38px; letter-spacing: -1.5px; margin-bottom: 12px; }
+    .sub { color: #806e61; margin-bottom: 30px; }
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 14px;
+    }
+    .item {
+      padding: 24px;
+      border: 1px solid #eadfce;
+      border-radius: 18px;
+      background: #fff;
+    }
+    .item h3 { font-size: 18px; margin-bottom: 7px; }
+    .item p { color: #806e61; font-size: 14px; min-height: 48px; }
+    .price { display: block; margin-top: 15px; font-weight: 800; font-size: 17px; }
+    .info {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      padding: 24px;
+      border-radius: 18px;
+      background: #f3e9db;
+    }
+    .card h3 { margin-bottom: 8px; }
+    .card p { color: #665348; font-size: 14px; }
+    .faq { border-top: 1px solid #eadfce; }
+    .faq div { padding: 20px 0; border-bottom: 1px solid #eadfce; }
+    .faq strong { display: block; margin-bottom: 5px; }
+    .faq p { color: #705d50; font-size: 14px; }
+    footer {
+      margin-top: 40px;
+      padding: 35px 7%;
+      border-top: 1px solid #eadfce;
+      color: #806e61;
+      font-size: 13px;
+      text-align: center;
+    }
+    @media (max-width: 650px) {
+      nav { display: none; }
+      h1 { letter-spacing: -2.5px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Marigold Bakehouse</div>
+  <nav>
+    <a href="#menu">Menu</a>
+    <a href="#ordering">Ordering</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="eyebrow">Freshly baked · Marigold Bakehouse</div>
+    <h1>Good bread.<br>Good mood.</h1>
+    <p>
+      Marigold Bakehouse is a neighbourhood bakery serving fresh breads,
+      pastries and sweet bakes. Customers can place orders through WhatsApp
+      or Instagram.
+    </p>
+    <a class="cta" href="#menu">View today's menu</a>
+  </section>
+
+  <section id="menu">
+    <h2>Menu</h2>
+    <p class="sub">Our current bakery menu and listed prices.</p>
+
+    <div class="menu">
+      <article class="item">
+        <h3>Sourdough Loaf</h3>
+        <p>Freshly baked sourdough loaf.</p>
+        <span class="price">₹180</span>
+      </article>
+
+      <article class="item">
+        <h3>Chocolate Babka</h3>
+        <p>Rich chocolate-filled babka.</p>
+        <span class="price">₹320</span>
+      </article>
+
+      <article class="item">
+        <h3>Almond Croissant</h3>
+        <p>Flaky almond-filled croissant.</p>
+        <span class="price">₹90</span>
+      </article>
+
+      <article class="item">
+        <h3>Cardamom Bun</h3>
+        <p>Soft, fragrant cardamom bun.</p>
+        <span class="price">₹60</span>
+      </article>
+    </div>
+  </section>
+
+  <section id="ordering">
+    <h2>Ordering</h2>
+    <p class="sub">Simple ordering through our messaging channels.</p>
+
+    <div class="info">
+      <div class="card">
+        <h3>WhatsApp</h3>
+        <p>
+          Send us a WhatsApp message with the products and quantities you
+          would like to order. Our ordering assistant will help collect the
+          order details.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Instagram</h3>
+        <p>
+          Customers can also message Marigold Bakehouse through Instagram
+          Direct Messages to enquire about products and place orders.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Order details</h3>
+        <p>
+          Please mention the product name and quantity. If any required
+          information is missing, the ordering assistant will ask for it.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>About</h2>
+    <p class="sub">
+      Marigold Bakehouse is a fictional bakery used as a demonstration
+      business for an automated customer-ordering and seller-dashboard
+      system.
+    </p>
+  </section>
+
+  <section id="faq">
+    <h2>FAQ</h2>
+    <div class="faq">
+      <div>
+        <strong>How can I place an order?</strong>
+        <p>Message Marigold Bakehouse through WhatsApp or Instagram.</p>
+      </div>
+      <div>
+        <strong>What products are currently listed?</strong>
+        <p>Sourdough Loaf, Chocolate Babka, Almond Croissant and Cardamom Bun.</p>
+      </div>
+      <div>
+        <strong>Can I order multiple quantities?</strong>
+        <p>Yes. Tell us the quantity you want for each product.</p>
+      </div>
+      <div>
+        <strong>What happens after I send my order?</strong>
+        <p>The order details are collected through the messaging workflow and entered into the bakery's seller order system.</p>
+      </div>
+      <div>
+        <strong>Where can I ask about something that isn't listed?</strong>
+        <p>Send us a message on WhatsApp or Instagram and the ordering assistant can help with the enquiry.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  Marigold Bakehouse · Demo business for an AI ordering automation system
+</footer>
+
+</body>
+</html>
